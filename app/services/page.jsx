@@ -11,27 +11,6 @@ const services = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam deserunt commodi cum. Saepe hic facilis voluptas officiis.",
     href: "",
   },
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam deserunt commodi cum. Saepe hic facilis voluptas officiis.",
-    href: "",
-  },
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam deserunt commodi cum. Saepe hic facilis voluptas officiis.",
-    href: "",
-  },
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam deserunt commodi cum. Saepe hic facilis voluptas officiis.",
-    href: "",
-  },
 ];
 
 const Services = () => {
