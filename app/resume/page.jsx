@@ -16,14 +16,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
+// import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero itaque nesciunt fuga nemo? Cupiditate, nihil est?",
+    "I excel at crafting elegent digital expiriences and I am proficient in various programming languages and technologies",
 
   info: [
     {
@@ -60,7 +60,7 @@ const about = {
 const skills = {
   title: "Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero itaque nesciunt fuga nemo? Cupiditate, nihil est?",
+    " I've dedicated significant effort to acquiring and refining various skills.",
   skillList: [
     {
       icon: <FaHtml5 />,

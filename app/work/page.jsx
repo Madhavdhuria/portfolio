@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import img from "@/public/assests/full.png";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -21,9 +20,9 @@ const projects = [
   {
     num: "01",
     category: "Full Stack",
-    title: "Paytm",
+    title: "Paytm Transaction Management Prototype",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus doloribus velit amet dolor, laudantium eum tempore natus vel. Vel velit blanditiis officiis ex eveniet laudantium itaque dolores temporibus atque.",
+      "Developed a scalable transaction management prototype, simulating key functionalities of Paytm's financial operations. The project was structured using Turborepo to efficiently manage multiple microservices. ",
     stack: [
       { name: "Next.js" },
       { name: "Prisma" },
@@ -31,27 +30,15 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "Typescript" },
     ],
-    image: "",
-    live: "",
-    github: "",
+    image: "/assets/paytm.png",
+    github: "https://github.com/Madhavdhuria/Paytm",
   },
   {
     num: "02",
-    category: "FrontEnd",
-    title: "Admin-dashBoard",
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus doloribus velit amet dolor, laudantium eum tempore natus vel. Vel velit blanditiis officiis ex eveniet laudantium itaque dolores temporibus atque.",
-    stack: [{ name: "React" }, { name: "Scss" }, { name: "Typescript" }],
-    image: "",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
     category: "Full Stack",
     title: "Ecommerce-Store",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus doloribus velit amet dolor, laudantium eum tempore natus vel. Vel velit blanditiis officiis ex eveniet laudantium itaque dolores temporibus atque.",
+      " Developed a comprehensive Ecommerce web application with a focus on providing a valuable admin side experience. The project features a modern, responsive user interface and a powerful admin dashboard.",
     stack: [
       { name: "React" },
       { name: "typecript" },
@@ -59,25 +46,24 @@ const projects = [
       { name: "Express" },
       { name: "Redux" },
     ],
-    image: { img },
-    live: "",
-    github: "",
+    image: "/assets/ecommerce.png",
+    github: "https://github.com/Madhavdhuria/ecommerce-frontend",
   },
   {
-    num: "04",
+    num: "03",
     category: "Full Stack",
     title: "Chat App",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa necessitatibus doloribus velit amet dolor, laudantium eum tempore natus vel. Vel velit blanditiis officiis ex eveniet laudantium itaque dolores temporibus atque.",
+      "Developed a highly responsive real-time chat application designed to handle up to 1,000 simultaneous users.",
     stack: [
       { name: "React" },
       { name: "Tailwind.css" },
       { name: "web sockets" },
       { name: "express" },
     ],
-    image: { img },
+    image: "/assets/chatapp.png",
     live: "",
-    github: "",
+    github: "https://github.com/Madhavdhuria/Chat-App",
   },
 ];
 
@@ -104,7 +90,7 @@ const Work = () => {
                 {Project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">
-                {Project.category} Project
+                {Project.title}
               </h2>
               <p className="text-white/60">{Project.description}</p>
               <ul className="flex gap-4">
@@ -119,16 +105,6 @@ const Work = () => {
               </ul>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={Project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="h-[70px] w-[70px]  rounded-full bg-white/5  flex justify-center items-center group   ">
-                        <BsArrowUpRight className="text-white  text-3xl group-hover:text-accent  " />
-                      </TooltipTrigger>
-                      <TooltipContent>Project Live</TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
                 <Link href={Project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -158,7 +134,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           alt=""
-                          className="object-cover"
+                          className="object-contain"
                           fill
                         />
                       </div>
