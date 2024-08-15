@@ -93,7 +93,7 @@ const Work = () => {
                 {Project.title}
               </h2>
               <p className="text-white/60">{Project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {Project.stack.map((item, index) => {
                   return (
                     <li className="text-xl text-accent" key={index}>
